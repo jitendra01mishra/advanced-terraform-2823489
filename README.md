@@ -18,6 +18,13 @@ Just give execute permission
 	chmod 400 tf_key.pem
 	ssh -i “tf_key.pem” ec2-user@<your_instance_name>
 
+few aws CLI commands : 
+
+export AWS_PAGER="" # -- this is resturn the out put the console .. by it aws cli send the output to the page out 
+
+aws ec2 describe-instances --query "Reservations[].Instances[].InstanceId" --output table 
+
+
 
 # Advanced Terraform
 This is the repository for the LinkedIn Learning course Advanced Terraform. The full course is available from [LinkedIn Learning][lil-course-url].
