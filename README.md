@@ -1,3 +1,24 @@
+Some of the important notes : 
+
+terraform command :
+git@github.com:LinkedInLearning/advanced-terraform-2823489.git
+
+	terraform init 
+	terraform plan -out=<out_file_path>.tfplan
+	terraform graph 
+	<you can copy this digraph and past it www.webgraphviz.com>
+	terraform show <out_file_path>.tfplan
+	terraform show -json <out_file_path>.tfplan
+	terraform apply <out_file_path>.tfplan
+	terraform show 
+
+you can view the state file which is in Json formate which will explains what has changed 
+also in case we wanted to login to terraform
+Just give execute permission
+	chmod 400 tf_key.pem
+	ssh -i “tf_key.pem” ec2-user@<your_instance_name>
+
+
 # Advanced Terraform
 This is the repository for the LinkedIn Learning course Advanced Terraform. The full course is available from [LinkedIn Learning][lil-course-url].
 
