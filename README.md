@@ -11,7 +11,7 @@ git@github.com:LinkedInLearning/advanced-terraform-2823489.git
 	terraform show -json <out_file_path>.tfplan
 	terraform apply <out_file_path>.tfplan
 	terraform show
-	terraform destroy ---> Never use in production
+	terraform destroy ---> Never use in production. Just remove those resources from the tf file and it will be destroyed. 
 
 
 you can view the state file which is in Json formate which will explains what has changed 
