@@ -10,7 +10,9 @@ git@github.com:LinkedInLearning/advanced-terraform-2823489.git
 	terraform show <out_file_path>.tfplan
 	terraform show -json <out_file_path>.tfplan
 	terraform apply <out_file_path>.tfplan
-	terraform show 
+	terraform show
+	terraform destroy ---> Never use in production
+
 
 you can view the state file which is in Json formate which will explains what has changed 
 also in case we wanted to login to terraform
