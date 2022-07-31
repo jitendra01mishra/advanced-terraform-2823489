@@ -12,6 +12,7 @@ git@github.com:LinkedInLearning/advanced-terraform-2823489.git
 	terraform show -json <out_file_path>.tfplan
 	terraform apply <out_file_path>.tfplan
 	terraform show
+	terraform console --> [REPL]   Read, evaluate, print, loop
 	terraform destroy ---> Never use in production. Just remove those resources from the tf file and it will be destroyed. 
 
 
@@ -56,5 +57,20 @@ Precedence of execution :
 	4. *.auto.tfvars
 	5. -var or -var-file command-line options 
 
+expressions functions : 
 
+	terraform console --> [REPL]   Read, evaluate, print, loop
+
+Terraform Function Types 
+
+	1) Numeric 
+	2) String 
+	3) Collection 
+	4) Encoding 
+	5) Filesystem 
+	6) Date and Time 
+	7) Hash and Crypto 
+	8) IP Network 
+	9) Type Conversion 
+	
 
