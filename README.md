@@ -5,6 +5,7 @@ git@github.com:LinkedInLearning/advanced-terraform-2823489.git
 
 	terraform init 
 	terraform plan -out=<out_file_path>.tfplan
+	terraform plan -var <variable_that_you_want_to_pass> 
 	terraform graph 
 	<you can copy this digraph and past it www.webgraphviz.com>
 	terraform show <out_file_path>.tfplan
