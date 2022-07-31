@@ -74,3 +74,15 @@ Terraform Function Types
 	9) Type Conversion 
 	
 
+terraform provide two types for functons : 
+
+count [same_values creation] and for_each is for list 
+
+	resource "aws_instance" "node_instances" {
+	  count = 4
+
+	resource "aws_iam_user" "iam_users" {
+	for_each =var.iam_accounts
+	name = each.key
+	}
+
