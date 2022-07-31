@@ -42,9 +42,19 @@ Terraform Support following variable types :
 
 setting up variable Values : 
 
-Files : terraform.tfvars, terraform.tfvars.json, *.auto.tfvars 
+	Files : terraform.tfvars, terraform.tfvars.json, *.auto.tfvars 
 
-environment variables : export TF_VAR_aws_access_key=[ACCESS_KEY]
+	environment variables : export TF_VAR_aws_access_key=[ACCESS_KEY]
 
-command line : terraform plan -var aws_access_key=[ACCESS_KEY]
+	command line : terraform plan -var aws_access_key=[ACCESS_KEY]
+
+Precedence of execution : 
+
+	1. Environment variables 
+	2. terraform.tfvars
+	3. terraform.tfvars.json
+	4. *.auto.tfvars
+	5. -var or -var-file command-line options 
+
+
 
