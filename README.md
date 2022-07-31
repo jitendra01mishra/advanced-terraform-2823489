@@ -29,15 +29,15 @@ aws ec2 describe-instances --query "Reservations[].Instances[].InstanceId" --out
 
 Terraform Support following variable types : 
 
-a) String: Development, t2.micro 
-b) boolean: true/false 
-c) Number: integers and fractional values
-d) List: ["DEV","QA","STG","PROD"], [1,15,23,44], var.environment_list[2]
-e) Set: like a list, but unordered 
-f) Map: key-values pairs of the same types with unique key. example : variable "config_value" {type=map(string)}
-g) Object: KEY=VALUE; value can be of any type; for example variable "instance_settings"
-     object({instance_type=string, monitoring=bool})
-h) Tuple: similar to object, stricter type-conversion rules 
+	a) String: Development, t2.micro 
+	b) boolean: true/false 
+	c) Number: integers and fractional values
+	d) List: ["DEV","QA","STG","PROD"], [1,15,23,44], var.environment_list[2]
+	e) Set: like a list, but unordered 
+	f) Map: key-values pairs of the same types with unique key. example : variable "config_value" {type=map(string)}
+	g) Object: KEY=VALUE; value can be of any type; for example variable "instance_settings"
+	     object({instance_type=string, monitoring=bool})
+	h) Tuple: similar to object, stricter type-conversion rules 
 
 
 # Advanced Terraform
